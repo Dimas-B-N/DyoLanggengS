@@ -1,0 +1,122 @@
+@font-face {
+font-family: "inter";
+src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+ --primary-color: hsl (75, 94%, 57%);
+ --secondary-light: hsl(0, 0%, 20%); --secondary: hsl(0, 0%, 12%);
+ --secondary-dark: hs1(0,0%, 8%);
+ --white: hs1(0, 0%, 100%);
+
+
+ font-family: "inter", sans-serif;
+ font-size: 18px;
+}
+
+
+html,
+body {
+ width: 100%;
+ min-height: 100vh;
+ background-color: #353A5F;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+main {
+ width: 100%;
+ max-width: 375px;
+ margin: auto;
+ padding: 3rem;
+ background-color: black;
+ border-radius: 0.85rem;
+}
+
+img {
+ width: 100%;
+ max-width: 100px;
+ aspect-ratio: 2/2;
+ border-radius: 100%;
+ margin: auto;
+ display: block;
+ object-fit: cover;
+}
+
+h1,
+h2,
+p,
+a {
+ text-align: center;
+}
+
+h1,
+a {
+ color: gold;
+}
+
+h1 {
+ margin-top: 2rem;
+ font-size: 1.9rem;
+ font-weight: 700;
+}
+
+h2 {
+ color: white;
+ 
+}
+
+h2 {
+ font-size: 1.1rem;
+ font-weight: 600;
+}
+
+p {
+ margin: 1rem 0 1.5rem;
+ color: blue;
+ background: linear-gradient(90deg, #60ffff 20%, #9fe509 50%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+menu {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+
+a:not(:last-child) {
+ margin-bottom: 0rem;
+}
+
+a:hover {
+background-color: var(--primary-color);
+color: var(--secondary);
+}
+
+a{
+height: 50px;
+width: 100%;
+max-width: 100%;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+border-radius: 30px;
+text-decoration: none;
+box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+border: none;
+background-color: #9EBAF3;
+color: FFFFFF;
+font-weight: bold;
+}

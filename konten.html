@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konten Saya</title>
+    <link rel="stylesheet" href="konten.css">
+</head>
+<body>
+    <div class="container">
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <section>
+        <h1>Konten Saya</h1>
+        <div class="post">
+            <h2>Videografi/Vlogging</h2>
+            <iframe width="280" height="280" src="https://www.youtube.com/embed/5qXmWvcRobg?si=nuU_Otn35hER-IZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Ini adalah konten yang berisikan sebuah video vlogging di tempat Padang Savana GlesungRejo.</p>
+        </div>
+        <div class="post">
+            <h2>Video Cinematography </h2>
+            <iframe width="280" height="280" src="https://www.youtube.com/embed/rJQl6XjdksU?si=3Ofrhm8Dg4TGWebr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Ini adalah konten dari postingan Youtube. Berisi Video Cinematic di Smansaba.</p>
+        </div>
+        <div class="post">
+            <h2>Bintang di langit malam</h2>
+            <img src="milkway.jpg" alt="foto bintang" width="280" height="auto">
+            <p>Foto Milkway (Antonious Aquila) ini saya tangkap melalui kamera ponsel, dengan bantuan aplikasi Stellarium untuk mengecek status keberadaan bintang.</p>
+        </div>
+        <div class="post">
+            <h2>Desain Poster Sederhana</h2>
+            <img src="poster.jpg" alt="posterfls2n" width="280" height="auto">
+            <p>Desain Poster untuk mengedukasi.</p>
+        </div>
+        <div class="box-image">
+            <h2>Desain Lainnya</h2>
+            <img src="ds1.jpg" alt="desain1">
+            <img src="ds2.jpg" alt="desain2">
+            <img src="ds3.jpg" alt="desain3">
+            <img src="ds4.jpg" alt="desain4">
+            <img src="ds5.jpg" alt="desain5">
+        </div>
+
+       <a href="index.html"> Kembali </a>
+    <section>
+        <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    </div>
+</body>
+</html>

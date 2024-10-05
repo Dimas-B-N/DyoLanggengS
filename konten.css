@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #353A5F;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: #000000;
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.box-image {
+    text-align: center;
+    align-content: center;
+    color: #5cfaff;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    justify-item: center;
+    gap: 10px;
+}
+
+.box-image img {
+    width: 10%;
+    height: 40%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: all ease-in-out 0.5s;
+}
+
+.box-image img:hover {
+ width: 40%;
+ aspect-ratio: 1/1;
+}
+
+.post h2 {
+    text-align: center;
+    align-content: center;
+}
+
+.post p {
+    text-align: center;
+    color: #FFD700;
+}
+
+a{
+height: 50px;
+width: 100%;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+border-radius: 50px;
+text-decoration: none;
+box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+border: none;
+background-color: #9EBAF3;
+color: FFFFFF;
+font-weight: bold;
+}
+
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%,100%{
+        filter:hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
